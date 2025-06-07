@@ -8,3 +8,12 @@ const slide = () => {
 };
 
 setInterval(slide, 3000);
+
+const quotes = document.querySelectorAll('#quote-carousel .quote');
+let currentQuote = 0;
+
+setInterval(() => {
+  quotes[currentQuote].classList.remove('active');
+  currentQuote = (currentQuote + 1) % quotes.length;
+  quotes[currentQuote].classList.add('active');
+}, 5000);
