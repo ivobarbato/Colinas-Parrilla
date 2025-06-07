@@ -25,8 +25,10 @@
         <a href="#menu" class="btn-reserva">Ver el Menú</a>
     </section>
 
-  <section id="galeria">
-    <h2 style="text-align:center">Platos de Clientes</h2>
+  <section id="galeria" class="galeria-estilo">
+    <div class="galeria-titulo">
+      <h2>Platos de Clientes</h2>
+    </div>
     <div class="slider-wrapper">
       <div class="slider">
         <img src="img/lomo1.png" alt="Lomo 1">
@@ -88,12 +90,29 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📍 Dirección: Cervantes 2099, Mendoza</p>
-    <p>📞 Teléfono: 0261-440-0233</p>
+    <p>📍 Dirección: <strong>Cervantes 2099, Mendoza</strong></p>
+    <p>📞 Teléfono: <a href="tel:02614400233">0261-440-0233</a></p>
+
+  <div class="reseña-google">
+    <p>⭐ <strong>4.6/5 en Google</strong></p>
+    <div class="quote-carousel" id="quote-carousel">
+      <p class="quote active">“La mejor parrilla de Mendoza. Los lomos son una locura.” — <em>Claudia G.</em></p>
+      <p class="quote">“Atención excelente y comida abundante. ¡Volveremos!” — <em>Julián M.</em></p>
+      <p class="quote">“Fuimos con amigos y salimos felices. El pollo grillado es un 10.” — <em>Rocío A.</em></p>
+    </div>
+  </div>
+
+    <a href="https://www.google.com.ar/maps/place/Colinas+parrilla/@-32.95143,-68.8443191,17.5z/data=!4m6!3m5!1s0x967e0bb9f1f0d20b:0x7b691852f94545c1!8m2!3d-32.9516089!4d-68.8454999!16s%2Fg%2F11bw82qh25?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-direccion">📍 Ver en Google Maps</a>
+
+    <div class="como-llegar">
+      <h3>🚗 ¿Cómo llegar?</h3>
+      <p>Estamos frente a la Cervecería Quilmes, a solo 2 minutos de el Puente Olive y tenemos espacio para estacionar.</p>
+    </div>
+
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.327200745957!2d-68.8454999!3d-32.9516089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bb9f1f0d20b%3A0x7b691852f94545c1!2sColinas%20parrilla!5e0!3m2!1ses!2sar!4v1717790000000!5m2!1ses!2sar" 
       width="100%" 
-      height="500" 
+      height="400" 
       style="border:0;" 
       allowfullscreen="" 
       loading="lazy" 
@@ -104,7 +123,7 @@
   <footer>
     <p>© 2025 Colinas Parrilla. Todos los derechos reservados.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
   <script src="js/script.js"></script>
 </body>
 </html>
